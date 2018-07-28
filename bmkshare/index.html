@@ -1,0 +1,301 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>	bmkshare-搜你所想</title>
+		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+			
+
+	</head>
+	<body>
+	<!--	标题栏-->
+		
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container"> 
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#example-navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a  class="navbar-brand" href="#"><font id="b" >bmk</font><font id="s" >share</font></a>
+				<form class="navbar-form navbar-left" role="search" action="http://www.baidu.com/baidu" target="_blank">
+			  <div class="form-group">
+		<input style="box-shadow: none;" type="text" name=word class="form-control" placeholder="Search">
+		<hr style="margin: 0;"/>
+	 			 </div>
+		<!--	  <button type="submit" class="btn btn-default" >搜索</button>-->
+			
+			 <button type="submit" class="btn btn-default" style=" background: none;margin: 0;border: none;padding: 0;"><img src="img/sousuo.png"/></button>
+			
+				</form>
+
+
+			</div>
+
+
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li id="l1"><a href="html/dz.html" target="_blank" ><img src="img/点赞.png"/></a>					
+					<li id="l2"><a href="https://qzone.qq.com" target="_blank"><img src="img/登陆.png"/></a></li>
+					<li id="l3"><a href="html/mess.html" target="_blank"><img src="img/信息.png"/></a></li>
+					<li id="l4"><a href="html/bs.html" target="_blank"><img src="img/分享.png"/></a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--	轮播-->
+		
+		<div id="img"><div class="bannerBox" >
+		<div class="swiper-container" id="swiper1">
+			<div class="swiper-wrapper" >
+				<div class="swiper-slide ">
+					<img src="img/b11.jpg">
+				</div>
+				<div class="swiper-slide ">
+					<img src="img/b2.jpg" >
+				</div>
+				<div class="swiper-slide ">
+					<img src="img/b3.jpg">
+				</div>
+				<div class="swiper-slide ">
+					<img src="img/b4.jpg">
+				</div>
+
+				<div class="swiper-pagination" ></div>
+
+			</div>
+		</div>
+
+		<div class="left"><img src="img/bannerL.png"></div>
+		<div class="right"><img src="img/bannerR.png"></div>		
+	</div>
+			</div>
+	<script src="lib/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src= "js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//最里层轮播
+	var mySwiper1 = new Swiper('#swiper1',{
+			loop: true,   //无限循环
+			autoplay : 2500,  //切换间隔
+			speed : 600,	//切换速度
+			autoplayDisableOnInteraction : false,
+		effect: 'fade',
+		grabCursor:true, //手掌
+
+
+		});
+
+
+	//前进后退按钮
+	$(".left").click(function(){
+		mySwiper1.slidePrev();
+
+	})
+	$(".right").click(function(){
+		mySwiper1.slideNext();
+
+	})
+
+
+	</script>
+
+
+	<!--	子标题栏-->
+
+	<section id="nr">
+		<div class="container">
+			<ul id="bt" class="nav nav-pills ">
+				<li ><a class="bt1" href="#n1" data-toggle="tab"><img src="img/随机.png" /></a></li>
+				<li><a class="bt1" href="#n2" data-toggle="tab"><img src="img/程序.png" /></a></li>
+				<li><a class="bt1" href="#n3" data-toggle="tab" ><img src="img/设计.png" /></a></li>
+				<li><a class="bt1" href="#n4" data-toggle="tab"><img src="img/实用.png" /></a></li>
+				<li><a class="bt1" href="#n5" data-toggle="tab"><img src="img/有趣.png" /></a></li>
+			</ul>
+			<div class="tab-content "  id= "nn" style="padding:20px;width: 100%">
+				<div class="tab-pane active fade in " id="n1" style="text-align: center">
+					<a href="http://huaban.com" target="_blank"><img src="img/随机/花瓣 拷贝 2.png" /></a>
+					<a href="http://www.dollarstreet.org" target="_blank" ><img src="img/随机/dollarstreet.png" /></a>
+					<a href="https://www.bilibili.com" target="_blank"><img src="img/随机/bilibili弹幕网  .png" /></a>
+					<p></p>
+					<a href="https://ibaotu.com/" target="_blank"><img src="img/随机/包图网 拷贝.png" /></a>
+					<a href="http://nipponcolors.com" target="_blank"><img src="img/随机/NIPPO COLORS.png" /></a>
+					<a href="http://www.tnc.org.cn/#TNC#world" target="_blank"><img src="img/随机/大自然保护协会.png" /></a>
+		
+					<p></p>
+					<a href="http://www.w3school.com.cn" target="_blank"><img src="img/随机/w3school 拷贝.png" /></a>
+					<a href="http://chabudai.org/blog/?p=59" target="_blank"><img src="img/随机/时钟.png" /></a>
+		
+					<p></p>
+					<a href="http://ac.scmor.com" target="_blank"><img src="img/随机/Google 镜像 拷贝.png" /></a>	
+					<a href="https://www.zhihu.com" target="_blank"><img src="img/随机/知 乎 拷贝.png" /></a>	
+					<a href="https://cli.im" target="_blank"><img src="img/随机/草料二维码.png" /></a>	
+
+				</div>
+				<div class="tab-pane fade" id="n2">
+					<a href="https://www.csdn.net" target="_blank"><img src="img/程序/CSDN.png" /></a>
+					<a href="https://www.zhihu.com" target="_blank"><img src="img/程序/知 乎.png" /></a>
+					<a href="http://ac.scmor.com" target="_blank"><img src="img/程序/Google 镜像.png" /></a>
+					<p></p>
+					<a href="http://www.infoq.com/cn/" target="_blank"><img src="img/程序/InfoQ.png" /></a>
+					<a href="https://www.oschina.net" target="_blank"><img src="img/程序/开 源 中 国.png" /></a>
+
+					<p></p>
+					<a href="http://www.w3school.com.cn" target="_blank"><img src="img/程序/图层 31.png" /></a>
+					<a href="https://github.com" target="_blank"><img src="img/程序/GitHub.png" /></a>
+
+					<p></p>
+					<a href="https://stackoverflow.com" target="_blank"><img src="img/程序/StackOverFlow.png" /></a>	
+					<a href="https://www.imooc.com" target="_blank"><img src="img/程序/幕 客 网.png" /></a>	
+				</div>
+				<div class="tab-pane fade" id="n3">
+					<a href="http://huaban.com" target="_blank"><img src="img/设计/花瓣.png" /></a>
+					<a href="http://699pic.com" target="_blank"><img src="img/设计/摄 图 网.png" /></a>
+					<a href="https://www.pinterest.com" target="_blank"><img src="img/设计/图层 21.png" /></a>
+					<p></p>
+					<a href="http://588ku.com" target="_blank"><img src="img/设计/千 库 网.png" /></a>
+					<a href="https://ibaotu.com" target="_blank"><img src="img/设计/包图网.png" /></a>
+					<a href="http://www.yanj.cn" target="_blank"><img src="img/设计/演界网.png" /></a>
+					<p></p>
+					<a href="http://www.iconfont.cn" target="_blank"><img src="img/设计/阿里巴巴矢量图库.png" /></a>
+					<a href="http://www.lanrentuku.com" target="_blank"><img src="img/设计/懒 人 图 库.png" /></a>
+					<a href="https://www.zcool.com.cn" target="_blank"><img src="img/设计/站 酷 网.png" /></a>
+					<p></p>
+					<a href="http://image.baidu.com/?fr=shitu" target="_blank"><img src="img/设计/百 度 识 图  鉴 你 所 见.png" /></a>		
+				</div>
+				<div class="tab-pane fade" id="n4">
+					<a href="http://search.chongbuluo.com/" target="_blank"><img src="img/实用/音 乐 搜 索 器.png" /></a>
+					<a href="https://www.bilibili.com" target="_blank"><img src="img/实用/bilibili弹幕网.png" /></a>
+
+					<p></p>
+					<a href="https://www.chuangkit.com" target="_blank"><img src="img/实用/创 客 贴.png" /></a>
+					<a href="https://cli.im" target="_blank"><img src="img/实用/草料二维码.png" /></a>
+					<a href="https://fast.com" target="_blank"><img src="img/实用/FAST.png" /></a>
+					<p></p>
+					<a href="https://witeboard.com" target="_blank"><img src="img/实用/Witeboard.png" /></a>
+
+					<p></p>
+					<a href="http://www.kuaidi100.com/" target="_blank"><img src="img/实用/快 递 100.png" /></a>		
+					<a href="http://www.cnki.net/" target="_blank"><img src="img/实用/中 国 知 网.png" /></a>	
+				</div>	
+				<div class="tab-pane fade " id="n5"  >
+					<a href="http://chabudai.org/blog/?p=59" target="_blank" > <h3>时钟系类ちゃぶ台メモ</h3> </a>
+					<a href="http://lazyplan.com" target="_blank"><h3>时光邮局|写给未来的自己</h3></a>
+					<a href="http://www.showmore.ch" target="_blank"><h3>无聊巨作</h3></a>
+					<a href="http://famicase.com/chronicle/" target="_blank"><h3>famicase.com</h3></a>
+					<a href="http://nipponcolors.com" target="_blank"><h3>舞动的颜色</h3></a>
+					<a href="http://www.tnc.org.cn/#TNC#world" target="_blank"><h3>大自然保护协会</h3></a>
+					<a href="http://weavesilk.com" target="_blank"><h3>weavesilk</h3></a>
+					<a href="http://www.dollarstreet.org" target="_blank"><h3>美元街</h3></a>
+					<a href="http://www.iconfinder.com" target="_blank"><h3>可以找到所有图标尺寸</h3></a>
+						
+				</div>
+
+		</div>
+	</div>					
+</section>
+		
+
+<!--大横线-->
+		
+	<section id="dm">
+		    <div class="container">
+				<div class="row">
+		      
+				</div>
+			</div>					
+	</section>
+
+
+<!--热门-->
+						
+	<section id="FontsLoL">
+    	<div class="container">
+    		<div class="row " data-wow-delay="0.6s">
+    			<div class="col-md-6 wow fadeInLeft">
+    				<a href="https://www.logojoy.com/ " target="_blank" ><img src=" img/fontlol.png" class="img-responsive"/></a>
+    			</div>
+    			
+    			<div class="col-md-6 wow fadeInRight">
+    				<h2>
+    					FontsLoL 一键生成高大上艺术字体！
+    				</h2>
+    				<p>
+    					非常百搭好用，做logo，banner，普通素材都OK！<p>版权问题：个人使用是免费的，商业授权则需要20美刀（人民币大概130左右）</p>
+    				</p>
+					<p><span>如果你想了解一下：<a href="http://www.fonts.lol" target="_blank">请点击这里</a></span></p>
+    			
+    			</div>
+    			
+    		</div>
+    	</div>
+    </section>
+						
+						
+  <section id="Logojoy">
+    	<div class="container">
+    		<div class="row wow fadeInUp">
+    			<div class="col-md-6 " data-wow-delay="0.6s">
+    				<h2>
+    					Logojoy 真·人工智能LOGO设计
+    				</h2>
+    				<p>
+    					以前类似的网站存在重复性，万一一不小心跟人家撞了logo，就尴尬了！！
+    				</p>
+					
+					<p>
+						但是今天的Logojoy就不一样了，它是通过智能算法来完成logo的制作,请看右图
+					</p>
+    				<p>
+    					如果你了解一下：<a href="https://www.logojoy.com/" target="_blank">请点击这里</a>
+    				</p>
+    				
+    			</div>
+    			<div class="col-md-6 ">
+    				<a href="https://www.logojoy.com/" target="_blank"><img src="img/bmk.png" class="img-responsive"/></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+		
+<!--底部-->
+		
+		<section id="foot">
+    	<div class="container">
+    		<div class="row  wow fadeInUp">
+    			
+    			<div class="col-md-12" >
+    				<img src="img/bs.png" class="img-responsive center-block"/>
+    			</div>
+				<div class="col-md-12">
+    				<pre>|    <a href="#img"><font color="#000000">主页</font></a>   |    <a href="https://weibo.com/gut1956?topnav=1&wvr=6&topsug=1&is_hot=1" target="_blank"><font color="##000000">微博</font></a>   |    <a href="cont.html" target="_blank"><font color="#000000">联系</font></a>   |    <a href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E6%A1%82%E6%9E%97%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6" target="_blank"><font color="#000000">地址</font></a>   |    <a href="html/author.html" target="_blank"><font color="#000000">作者</font></a>    |</pre>     
+    			</div>
+				<div class="col-md-12">
+    				<img src="img/foot.png" class="img-responsive center-block"/>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+		<script src="js/jquery.singlePageNav.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+    	<script type="text/javascript">
+		$(function(){
+			
+			//处理小按钮的关闭
+			$(".navbar-collapse a").click(function(){
+				$(".navbar-collapse").collapse("hide");
+			});
+			new WOW().init();
+		});
+			
+	</script>
+  	
+		</body>
+	</html>

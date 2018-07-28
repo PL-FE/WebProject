@@ -1,0 +1,268 @@
+/* CSS Document */
+
+
+
+nav.navbar.navbar-default {
+    border: none;
+    background: #80c269;
+    box-shadow: 0px 2px 8px rgba(50,50,50,0.25);
+	margin: 0;
+}
+.navbar-default .navbar-brand  {
+	
+    font-weight: bold;
+    font-size: 40px;
+    height: 70px;
+    line-height: 40px;
+   
+	font-family: "comic sans ms";
+	
+	
+}
+#b{
+
+	margin-left: 40px;
+	color: black;
+}
+
+#s{
+	color: #ffffff;
+}
+#l1,#l2{
+	margin: 0 15px;	
+}
+
+#l3 {
+	margin: 5px 15px;
+}
+#l4{
+	margin-left: 15px;
+	margin-right: 40px;
+}
+.navbar-form ,.navbar-left{
+	margin-top: 25px;
+	
+}
+.form-control{
+	border:none;background:rgba(0, 0, 0, 0);
+	
+	color: #FFFFFF;
+	font-size: 20px;;
+	
+	
+}
+
+
+
+/*图片滚动区*/
+#img{ 
+	width: 100%;
+	height: 600px;
+	background-color: #ffffff;
+	position: absolute;
+	top:60px;
+ 	left:0;
+	margin: 0;
+	border:0;
+	padding:0;
+}
+.bannerBox{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	margin:  0px;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+}
+.bannerBox:hover .left{
+	display: block;
+}
+.bannerBox:hover .right{
+	display: block;
+}
+
+#swiper1{
+	filter:alpha(opacity=95);   
+	-moz-opacity:0.95;     
+	opacity: 0.95;   				
+}
+
+#swiper1 .swiper-slide,#swiper1 img{
+	width: 100%;
+	height: 550px;
+	font-size: 100px;
+	line-height: 510px;
+	text-align: center;
+	object-fit: cover;
+}
+
+
+.left{
+	position: absolute;
+	top: 210px;
+	width: 26px;
+	height: 65px;
+	background-color: rgba(64,64,64,0.6);
+	text-align: center;
+	line-height: 65px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	z-index: 2;
+	display: none;
+}
+.left img{
+	width:15px ;
+	height: 28px;
+	margin-top: 3px;
+	margin-right: 3px;				
+}
+.right{
+	position: absolute;
+	top: 210px;
+	right: 0;
+	width: 26px;
+	height: 65px;
+	background-color: rgba(64,64,64,0.6);
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	z-index: 2;	
+	display: none;			
+}
+.right img{
+	width:15px ;
+	height: 28px;
+	margin-top: 18px;
+	margin-left: 6px;				
+}
+	.swiper-pagination{
+		top: 450px;
+		left: 45%;
+		 
+		
+	}
+
+
+/*  内容*/
+#nr{
+	position: relative;
+	top: 630px;
+
+	text-align: center;
+}
+
+
+
+.bt1{
+	margin-left:80px;
+	
+	align: center;
+}
+
+#bt li{
+	margin-left: -10px;
+}
+
+#nn img {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	
+}
+
+
+
+
+#nr  a{
+	width: 140px;
+	border-radius: 0%
+}
+#nr  a:active {
+    background-color: #ffffff !important;
+/*	点击时候*/
+}
+
+#n1  a :hover {
+    background-color: #820D0F;
+	
+
+}
+
+/*选中后*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #A2CCA7;
+	
+}
+
+/*大横线*/
+#dm{
+	background:  #80c269;
+   position: relative;
+    text-align: center;
+	height: 100px;
+	top: 650px;
+
+}
+
+#dm .row  {
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+#dm .row a {
+	color: #000000;
+	font-size: 2rem;
+}
+
+
+/*热门*/
+#FontsLoL{
+	background: #ffffff;
+	padding: 80px 0px;
+	position: relative;
+	top: 650px;
+}
+
+#Logojoy{
+	padding: 30px 0px;
+	position: relative;
+	top: 660px;
+}
+
+
+#FontsLoL h2,#Logojoy h2{
+	font-weight: bold;
+}
+
+#FontsLoL p ,#Logojoy p{
+	line-height: 40px;
+}
+
+
+/*底部*/
+
+#foot{
+	position: relative;
+	top: 750px;
+	
+	
+}
+
+#foot pre{
+	background-color:  #FFFFFF;
+	border: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#foot a:hover{
+	text-decoration: none;
+	
+}
+#foot a:link{
+	color: #000000;
+}
+
+
+
