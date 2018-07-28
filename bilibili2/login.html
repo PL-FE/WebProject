@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#main{margin: 0 auto;width: 1000; }
+			#head{background:rgb(0,160,216);height: 106px;width: 100%;}
+			#head img{margin-top: 20px;}
+			#main>div{width: 1000px;margin: 0 auto; }
+			h1{text-align: center;}
+			#biao{margin-left: 300px;}
+			#user,#pwd,#smb{width: 388px;border-radius: 4px;outline:0;border: 1px #ddd solid;
+				padding: 10px;margin-top:20px;
+			}
+			#tel{width: 298px;border-radius: 4px;outline:0;border: 1px #ddd solid;
+				padding: 10px;margin-left:10px;}
+			#sel{margin-top: 40px;}
+			#sel select{padding-left:0px;padding-right:0px;padding-bottom:10px;padding-top:10px;border: 1px #ddd solid;border-radius: 4px;width: 80px;}
+			#userDiv,#pwdDiv,#telDiv{font-size: 13px;}
+			#smb{background: white;border: 1px #ddd solid;width: 410px;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="" style="width: 100%;text-align: center;">
+			<div id="head"><img src="img/login.png"/></div>
+		</div>
+		<div id="main">
+			
+			<div >
+				<h1>注册</h1>
+			<div id="biao">
+				<form action="index.html" method="get">
+					<p>
+						<input  type="text" name="user" id="user" placeholder="昵称（例：哔哩哔哩）" maxlength="50" />*
+						<span id="userDiv"></span>
+					</p>
+					<p>
+						<input type="password" name="pwd" id="pwd"  placeholder="密码（6-16个字符组成，区分大小写）" />*
+						<span id="pwdDiv"></span>
+					</p>
+					<p>
+						<div id="sel">
+							<select>
+								  <option value ="c">中国大陆</option>
+								  <option value ="o">other</option>
+								  <option value ="o">other</option>
+								  <option value ="o">other</option>
+							</select>
+							 <input type="text" name="tel" id="tel" value="" placeholder="填写常用手机号" />*<span id="telDiv"></span>
+						</div>
+					</p>
+					<input type="submit" id="smb" name="" value="注册"/>
+			</form>
+		</div>
+		</div>
+	</div>
+		<script>
+			function Userfoc(){
+				var user = document.getElementById("user").value;
+				if(user.length<6){
+					document.getElementById("userDiv").innerHTML = "你的用户名过短，不允许注册！";
+					return false;
+				}
+				
+				var reg = /\s/;
+				if(reg.test(user)){
+					document.getElementById("userDiv").innerHTML = "昵称含有非法字符！";
+					return false;
+				}
+				document.getElementById("userDiv").innerHTML = "";
+				return true;
+			}
+			function Pwdfoc(){
+				var user = document.getElementById("pwd").value;
+				if(user.length<6){
+					document.getElementById("pwdDiv").innerHTML = "密码不能小于6个字符！";
+					return false;
+				}
+				
+				if(user.length>16){
+					document.getElementById("pwdDiv").innerHTML = "密码不能大于16个字符！";
+					return false;
+				}
+				
+				
+				document.getElementById("pwdDiv").innerHTML = "";
+				return true;
+			}
+			function Telfoc(){
+				var tel = document.getElementById("tel").value;
+				
+				
+				var reg = /^1\d{10}$/;
+				if(!reg.test(tel)){
+					document.getElementById("telDiv").innerHTML = "手机号非法";
+					return false;
+				}
+				document.getElementById("telDiv").innerHTML = "";
+				return true;
+			}
+			
+			function smb(){
+				if(Userfoc()&&Pwdfoc()&&Telfoc()){
+					return true;
+				}else{
+					return false;
+				}
+			}
+		
+			
+			document.getElementById("user").onblur = Userfoc;
+			
+			document.getElementById("pwd").onfocus = Pwdfoc;
+			document.getElementById("pwd").onblur = Pwdfoc;
+			
+			document.getElementById("tel").onblur = Telfoc;
+			
+			document.getElementById("smb").onclick = smb;
+			
+			
+			
+		</script>
+		
+	</body>
+</html>
